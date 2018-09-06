@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* put the Charset so the browser knows what to do. */
+/* Linked all the fonts to the page, so the cient can have the fonts for the sections that they want. */
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Grunge;
+    src: url('1942.woff') format('woff'),
+        url('1942.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('ttf');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author: Diego Sandoval
+   Date:   09/06/18
+   
+   Filename: ph_styles.css
+
+*/
+/* Structural Styles */
+/* changed the html background color, this then caused the whole website color to change. */
+html {
+    background-color: hsl(91, 8%, 56%);
+}
+
+/* Changed the body background color, so that only the body section is that color. Also changed the font to the body so that the tags that are not affected by the CSS rules will have a custom font. */
+body {
+    background-color: hsl(58, 31%, 84%);
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+
+/* Adde a header CSS rule, changed it's background to black.  */
+header {
+    background-color: black;
+}
+
+/* Added a paragraph CSS rule, made it's margin 0px, and it's padding 5 pixels on top and 25 pixels on the right, bottom, and left. */
+p {
+    margin: 0px;
+    padding: 5px 25px 25px;
+}
+
+/* Added a CSS rule that effects all paragraphs that are direct desendents of the body tag, this rule then changed the font size and made the text aligned center. */
+body>p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Put a CSS rule that effects the addres tag, this rule changed the font style, the font size, aligned the text center, and made the padding on the toop and bottom 10 pixels. */
+address {
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Navigation Styles */
+/* Put a CSS rule to effect all a that are anchored in nav. This changed the font familu of the tag, and the top and bottom padding to 10 pixels. */
+nav a {
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Placed a CSS rule that makes all anchor tags that have been visted and are linked that are nested in nav tags text color to white, text decoration to none and background color to hsla(0, 0%, 42%, 0.4). */
+nav a:visited,
+nav a:link {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4);
+}
+
+/* Added a CSS rule that effects all anchor tags nested within a nav tag that are being active or are being hovered over, to change their background color and the text color. */
+nav a:hover,
+nav a:active {
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsl(0, 0%, 42%, 0.7);
+}
+
+/* Section Styles */
+/* This CSS rule effects h1 in the section tag with the class playbill. The effects this adds is a font size of 3 em, a font weight of normal, a margin all around of 0px, and padding on the top of 20px, on the right of 0px, on the bottom of 10px, on the left 20px. */
+section.playbill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 20px 0px 10px 20px;
+}
+
+/* Added multiple section ID of play with the corresponding number, the each change the background, each one is different.  */
+section#play1 {
+    background-color: hsl(240, 100%, 88%);
+}
+
+section#play2 {
+    background-color: hsl(25, 88%, 73%);
+}
+
+section#play3 {
+    background-color: hsl(0, 100%, 75%);
+}
+
+section#play4 {
+    background-color: hsl(296, 86%, 86%);
+}
+
+/* Added multiple CSS rules that affect the Heading 1 tags with in the section with the ID of play with the corresponding number, they each change the text font.  */
+section#play1 h1 {
+    font-family: Champagne, cursive;
+}
+
+section#play2 h1 {
+    font-family: Grunge, ‘Times New Roman’, Times, serif;
+}
+
+section#play3 h1 {
+    font-family: Impact, Charcoal, sans-seri
+}
+
+section#play4 h1 {
+    font-family: Dobkin, cursive;
+}
+
+/* Description List Styles */
+/* This dt CSS rule changes the font size to 1.3em, the font weight to bold and changes the color of the text. */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+/* added a CSS rule to change the dd tags to have a font size of 1.3em, a margin left space of 0px, and a margin bottom of 10 px. */
+dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
